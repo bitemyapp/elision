@@ -1,0 +1,23 @@
+name:                elision
+version:             0.1.0.0
+synopsis:            A data structure over two functions to be linked together at a later time.
+homepage:            http://github.com/crough/elision#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Alex Crough
+maintainer:          alex@crough.io
+copyright:           2016 Alex Crough
+category:            Data
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Data.Elision
+  default-language:    Haskell2010
+  build-depends:       base        >= 4.7   && < 5
+                     , profunctors >= 5.1.2
+
+source-repository head
+  type:     git
+  location: https://github.com/crough/elision
